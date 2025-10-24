@@ -333,12 +333,111 @@
   <div class="container">
     <div class="card text-white shadow-lg border-0" style="border-radius: 20px; background-color: #151414;">
     <div class="card-body">
-        <h2 class="fw-bold text-white mb-4">Ubicación y Contacto a Nuestras Sucursales</h2>
+        <h2 class="fw-bold text-white mb-4">Nuestras Sucursales</h2>
         <p>
           Puedes encontrarnos en diferentes puntos para tu mayor comodidad.
         </p>
         <div id="map" style="width:100%; height:400px; border-radius: 10px; overflow:hidden;"></div>
       </div>
+      <!-- TARJETAS DE SUCURSALES -->
+<div id="sucursales" class="mt-5">
+  <h3 class="text-center text-white mb-4">Nuestras Sucursales</h3>
+
+  <!-- Versión para escritorio -->
+  <div class="d-none d-md-flex justify-content-center flex-wrap gap-4">
+    <div class="card text-white shadow-lg border-0" style="width: 22rem; background-color: #1a1a1a; border-radius: 20px;">
+      <img src="roqaLogo1.1.png" class="card-img-top rounded-top" alt="Sucursal Santa Fe" style="height: 180px; object-fit: cover;">
+      <div class="card-body">
+        <h5 class="card-title fw-bold text-danger">Sucursal Santa Fe</h5>
+        <p class="card-text">
+          📍 Dirección: Av. Principal #123, La Piedad, Mich.<br>
+          🕒 Horario: Lunes a Sábado, 9:00 AM - 7:00 PM<br>
+          🔧 Especialistas en refacciones de alto rendimiento y accesorios premium.
+        </p>
+      </div>
+    </div>
+
+    <div class="card text-white shadow-lg border-0" style="width: 22rem; background-color: #1a1a1a; border-radius: 20px;">
+      <img src="roqaLogo1.1.png" class="card-img-top rounded-top" alt="Sucursal Banquetes" style="height: 180px; object-fit: cover;">
+      <div class="card-body">
+        <h5 class="card-title fw-bold text-danger">Sucursal Banquetes</h5>
+        <p class="card-text">
+          📍 Dirección: Calle Reforma #456, Banquetes, Mich.<br>
+          🕒 Horario: Lunes a Sábado, 9:00 AM - 7:00 PM<br>
+          🚗 Atención rápida y surtido completo en repuestos originales.
+        </p>
+      </div>
+    </div>
+
+    <div class="card text-white shadow-lg border-0" style="width: 22rem; background-color: #1a1a1a; border-radius: 20px;">
+      <img src="roqaLogo1.1.png" class="card-img-top rounded-top" alt="Sucursal Numaran" style="height: 180px; object-fit: cover;">
+      <div class="card-body">
+        <h5 class="card-title fw-bold text-danger">Sucursal Numaran</h5>
+        <p class="card-text">
+          📍 Dirección: Calle Hidalgo #789, Numaran, Mich.<br>
+          🕒 Horario: Lunes a Sábado, 9:00 AM - 7:00 PM<br>
+          🏍️ Servicio especializado y atención personalizada para motociclistas.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Versión para móvil (carrusel) -->
+  <div id="carouselSucursales" class="carousel slide d-md-none" data-bs-ride="carousel">
+    <div class="carousel-inner">
+
+      <div class="carousel-item active">
+        <div class="card text-white shadow-lg border-0 mx-auto" style="width: 90%; background-color: #1a1a1a; border-radius: 20px;">
+          <img src="roqaLogo1.1.png" class="card-img-top rounded-top" alt="Sucursal Santa Fe" style="height: 200px; object-fit: cover;">
+          <div class="card-body">
+            <h5 class="card-title fw-bold text-danger">Sucursal Santa Fe</h5>
+            <p class="card-text">
+              📍 Dirección: Av. Principal #123, La Piedad, Mich.<br>
+              🕒 Lunes a Sábado, 9:00 AM - 7:00 PM<br>
+              🔧 Refacciones de alto rendimiento y atención personalizada.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="card text-white shadow-lg border-0 mx-auto" style="width: 90%; background-color: #1a1a1a; border-radius: 20px;">
+          <img src="roqaLogo1.1.png" class="card-img-top rounded-top" alt="Sucursal Banquetes" style="height: 200px; object-fit: cover;">
+          <div class="card-body">
+            <h5 class="card-title fw-bold text-danger">Sucursal Banquetes</h5>
+            <p class="card-text">
+              📍 Calle Reforma #456, Banquetes, Mich.<br>
+              🕒 Lunes a Sábado, 9:00 AM - 7:00 PM<br>
+              🚗 Surtido completo en repuestos originales.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="card text-white shadow-lg border-0 mx-auto" style="width: 90%; background-color: #1a1a1a; border-radius: 20px;">
+          <img src="roqaLogo1.1.png" class="card-img-top rounded-top" alt="Sucursal Numaran" style="height: 200px; object-fit: cover;">
+          <div class="card-body">
+            <h5 class="card-title fw-bold text-danger">Sucursal Numaran</h5>
+            <p class="card-text">
+              📍 Calle Hidalgo #789, Numaran, Mich.<br>
+              🕒 Lunes a Sábado, 9:00 AM - 7:00 PM<br>
+              🏍️ Atención profesional y refacciones garantizadas.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Controles del carrusel -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselSucursales" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselSucursales" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+</div>
     </div>
   </div>
 </section>
@@ -564,6 +663,7 @@
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyALF_yQoTvNQe9eFHd0huvxzQTbDHzFKM4&callback=initMap"></script>
 </body>
 </html>
+
 
 
 

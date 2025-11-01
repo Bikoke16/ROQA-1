@@ -15,17 +15,30 @@
    
 
 
-        #galeriaRoqa img {
-        /*border: 3px solid #fff;*/
-        margin-top: 70px; /* elimina el espacio arriba del carrusel */
-        /*border-radius: 15px;*/
-        /*box-shadow: 0 4px 6px rgba(0,0,0,0.3);*/
-        object-fit: cover;      /* mantiene proporciones sin deformarse */
-        width: 100%;            /* ocupa todo el ancho del monitor */
-        height: auto;           /* la altura se adapta al tamaño natural */
-        max-height: 500px;      /* mantiene el formato actual */
-    }
+       #galeriaRoqa img {
+    object-fit: cover;      /* mantiene proporciones sin deformarse */
+    width: 100%;            /* ocupa todo el ancho */
+    height: 600px;          /* altura fija para escritorio */
+    margin-top: 70px;       /* elimina el espacio arriba del carrusel */
+    /*border: 3px solid #fff;*/
+    /*border-radius: 15px;*/
+    /*box-shadow: 0 4px 6px rgba(0,0,0,0.3);*/
+}
 
+/* Ajuste para pantallas móviles */
+@media (max-width: 768px) {
+    #galeriaRoqa img {
+        height: 300px;      /* altura fija más pequeña para móvil */
+        object-fit: cover;  /* mantiene el recorte correcto */
+    }
+}
+
+/* Ajuste opcional para pantallas muy pequeñas */
+@media (max-width: 480px) {
+    #galeriaRoqa img {
+        height: 250px;
+    }
+}
       
         body, html { margin: 0; padding: 0; }
 
@@ -171,7 +184,7 @@
       
         <!-- Logo en el header -->
         <a class="navbar-brand d-flex align-items-center fw-bold" href="#">
-            <img src="roqaLogo11.png" alt="Logo" style="height:50px; width:auto; margin-right:10px;">
+            <img src="roqaNewLogo4.png" alt="Logo" style="height:50px; width:auto; margin-right:10px;">
             ROQA MOTOPARTES
         </a>
 
@@ -203,11 +216,12 @@
           <img src="roqaLogo3.png" class="d-block w-100" alt="Imagen 1" >
         </div>
         <div class="carousel-item">
-          <img src="izqRoqa3.png" class="d-block w-100" alt="Imagen 2" >
+          <img src="roqaNewLogo5.png" class="d-block w-100" alt="Imagen 2" >
         </div>
+       <!-- 
         <div class="carousel-item">
-          <img src="izqRoqaBan1.2.png" class="d-block w-100" alt="Imagen 3">
-        </div>
+          <img src="roqaNewLogo5.png" class="d-block w-100" alt="Imagen 3">
+        </div>-->
       </div>
 
       <!-- Botones de navegación -->
@@ -358,12 +372,12 @@
       <div class="card-body">
         <h5 class="card-title fw-bold text-danger">Sucursal Santa Fe</h5>
         <p class="card-text">
-          📍 Dirección: Blvd. Lazaro Cardenas 1648, Santa Fe, La Piedad, Mich. <br>
-          <br> 🕒 Horario: Lunes a Viernes, 9:00 AM - 7:00 PM <br>
-                  Sabado, 9:00 AM - 4:30 PM <br>
-                  Domingo, 9:00 AM - 3:00 PM <br> <br>
+          📍  Blvd. Lazaro Cardenas 1648, Santa Fe, La Piedad, Mich. <br>
+          <br> 🕒  Lunes a Viernes 9:00 AM - 7:00 PM <br><br>
+                  Sabado 9:00 AM - 4:30 PM <br><br>
+                  Domingo 9:00 AM - 3:00 PM <br> <br>
           
-           Especialistas en refacciones de alto rendimiento y accesorios premium. <br><br>
+            <br><br>
         </p>
       </div>
     </div>
@@ -373,9 +387,10 @@
       <div class="card-body">
         <h5 class="card-title fw-bold text-danger">Sucursal Banquetes</h5>
         <p class="card-text">
-          📍 Dirección: Calle Reforma #456, Banquetes, Mich.<br> <br>
-          🕒 Horario: Lunes a Sábado, 9:00 AM - 7:00 PM<br> <br>
-          Atención rápida y surtido completo en repuestos originales. <br><br>
+          📍 Calle Reforma #456, Banquetes, Mich.<br> <br>
+              🕒 Lunes a Viernes 9:00 AM - 6:30 PM<br> <br>
+                 Sabado 9:00 AM - 4:30 PM <br><br>
+                 Domingo 9:00 AM - 3:30 PM <br><br>
         </p>
       </div>
     </div>
@@ -385,9 +400,10 @@
       <div class="card-body">
         <h5 class="card-title fw-bold text-danger">Sucursal Numaran</h5>
         <p class="card-text">
-          📍 Dirección: Calle Hidalgo #789, Numaran, Mich.<br> <br>
-          🕒 Horario: Lunes a Sábado, 9:00 AM - 7:00 PM<br> <br>
-          Servicio especializado y atención personalizada para motociclistas. <br><br>
+          📍 Calle Hidalgo #789, Numaran, Mich.<br> <br>
+              🕒 Lunes a Viernes 9:00 AM - 6:30 PM  <br> <br>
+                 Sabado 9:00 AM - 4:30 PM <br><br>
+                 Domingo 9:00 AM - 3:30 PM <br><br>
         </p>
       </div>
     </div>
@@ -403,12 +419,12 @@
           <div class="card-body">
             <h5 class="card-title fw-bold text-danger">Sucursal Santa Fe</h5>
             <p class="card-text">
-              📍 Dirección: Blvd. Lazaro Cardenas 1648, Santa Fe, La Piedad, Mich. <br>
-          <br> 🕒 Horario: Lunes a Viernes, 9:00 AM - 7:00 PM <br>
-                  Sabado, 9:00 AM - 4:30 PM <br>
-                  Domingo, 9:00 AM - 3:00 PM <br> <br>
+              📍 Blvd. Lazaro Cardenas 1648, Santa Fe, La Piedad, Mich. <br>
+          <br> 🕒 Lunes a Viernes 9:00 AM - 7:00 PM <br><br>
+                  Sabado 9:00 AM - 4:30 PM <br><br>
+                  Domingo 9:00 AM - 3:00 PM <br> <br>
           
-          🔧 Especialistas en refacciones de alto rendimiento y accesorios premium. <br><br>
+          
             </p>
           </div>
         </div>
@@ -421,8 +437,9 @@
             <h5 class="card-title fw-bold text-danger">Sucursal Banquetes</h5>
             <p class="card-text">
               📍 Calle Reforma #456, Banquetes, Mich.<br> <br>
-              🕒 Lunes a Sábado, 9:00 AM - 7:00 PM<br> <br>
-               Surtido completo en repuestos originales. <br>
+              🕒 Lunes a Viernes 9:00 AM - 6:30 PM<br> <br>
+                 Sabado 9:00 AM - 4:30 PM <br><br>
+                 Domingo 9:00 AM - 3:30 PM <br><br>
             </p>
           </div>
         </div>
@@ -435,8 +452,9 @@
             <h5 class="card-title fw-bold text-danger">Sucursal Numaran</h5>
             <p class="card-text">
               📍 Calle Hidalgo #789, Numaran, Mich.<br> <br>
-              🕒 Lunes a Sábado, 9:00 AM - 7:00 PM<br> <br>
-               Atención profesional y refacciones garantizadas. <br><br>
+              🕒 Lunes a Viernes 9:00 AM - 6:30 PM  <br> <br>
+                 Sabado 9:00 AM - 4:30 PM <br><br>
+                 Domingo 9:00 AM - 3:30 PM <br><br>
             </p>
           </div>
         </div>
@@ -761,3 +779,4 @@
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyALF_yQoTvNQe9eFHd0huvxzQTbDHzFKM4&callback=initMap"></script>
 </body>
 </html>
+

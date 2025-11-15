@@ -213,7 +213,7 @@
 </nav>
 
  <!-- Carrusel de imágenes -->
-    <div id="galeriaRoqa" class="carousel slide" data-bs-ride="carousel"  data-bs-interval="2000">
+    <div id="galeriaRoqa" class="carousel slide" data-bs-ride="carousel"  data-bs-interval="3000">
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img src="PORTADA ROQA-02.png" class="d-block w-100" alt="Imagen 1" >
@@ -238,6 +238,79 @@
     </div>
 </div>
 </header>
+
+
+<!-- ⭐ BARRA DE ACTUALIZACIONES Y PROMOCIONES -->
+<section id="barra-actualizaciones" class="py-3" style="background: #020202; border-top: 2px solid #020202; border-bottom: 2px solid #020202;">
+    <div class="container-fluid">
+
+        <div class="d-flex align-items-center overflow-hidden" style="height: 80px;">
+            <div class="slide-promos d-flex">
+
+                <!-- 🎯 LISTA ORIGINAL -->
+                <div class="promo-item d-flex align-items-center px-4">
+                    <img src="logoBuenFin.png" alt="Buen Fin" style="height:100px; margin-right: 15px;">
+                    <span class="text-white fw-bold fs-5">¡TODA LA TIENDA CON 10% POR BUEN FIN!</span>
+                </div>
+
+                <div class="promo-item d-flex align-items-center px-4">
+                    <img src="fotoLogoBardahl.png" alt="Aceites" style="height:100px; margin-right: 15px;">
+                    <span class="text-white fw-bold fs-5">Aceites CNR y BARDAHL con hasta 20% </span>
+                </div>
+
+                <div class="promo-item d-flex align-items-center px-4">
+                    <img src="fotoLlantaChaoy.png" alt="Llantas" style="height:100px; margin-right: 15px;">
+                    <span class="text-white fw-bold fs-5">Llantas para trabajo y deportivas con 10%</span>
+                </div>
+
+                <!-- 🎯 LISTA DUPLICADA PARA EFECTO INFINITO -->
+                <div class="promo-item d-flex align-items-center px-4">
+                    <img src="logoBuenFin.png" alt="Buen Fin" style="height:100px; margin-right: 15px;">
+                    <span class="text-white fw-bold fs-5">¡TODA LA TIENDA CON 10% POR BUEN FIN!</span>
+                </div>
+
+                <div class="promo-item d-flex align-items-center px-4">
+                    <img src="fotoLogoBardahl.png" alt="Aceites" style="height:100px; margin-right: 15px;">
+                    <span class="text-white fw-bold fs-5">Aceites CNR y BARDAHL con hasta 20% </span>
+                </div>
+
+                <div class="promo-item d-flex align-items-center px-4">
+                    <img src="fotoLlantaChaoy.png" alt="Llantas" style="height:100px; margin-right: 15px;">
+                    <span class="text-white fw-bold fs-5">Llantas para trabajo y deportivas con 10%</span>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<style>
+/* ⭐ Movimiento horizontal continuo suave */
+.slide-promos {
+    display: flex;
+    animation: mover 15s linear infinite;
+}
+
+.promo-item {
+    white-space: nowrap;
+}
+
+@keyframes mover {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+/* Móviles */
+@media (max-width: 768px) {
+    #barra-actualizaciones span {
+        font-size: 1rem;
+    }
+    #barra-actualizaciones img {
+        height: 80px !important;
+    }
+}
+</style>
 
     <!-- SECCIÓN REDES SOCIALES -->
 <section id="redes-roqa" class="py-5 bg-light text-center">
@@ -267,6 +340,9 @@
     </div>
   </div>
 </section>
+
+ 
+
 
     <!-- SECCIÓN PRODUCTOS -->
 <section class="seccion-extra" id="productos">
@@ -776,6 +852,6 @@
 </script>
 
     <!-- Script de la API de Google Maps -->
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyALF_yQoTvNQe9eFHd0huvxzQTbDHzFKM4&callback=initMap"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXSxC4U0uWP7clFeDoRjaAV67MD1fgTCU&callback=initMap"></script>
 </body>
 </html>
